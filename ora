@@ -1,0 +1,24 @@
+#### ORA-01012: 和 SP2-1545
+
+**代号错误详情**：
+
+ORA-01012: not logged on
+
+SP2-1545: This feature requires Database availability.
+
+**前提**：使用`export ORACLE_PDB_SID=pdb名`登录数据库，后出现报错
+
+临时解决方法
+
+```sql
+shutdown adort;
+startup;
+```
+
+```
+2.永久解决办法（❗还没尝试）
+
+不再使用shutdown 不跟参数的方式关闭数据库
+```
+
+参考：[ORA-01012 ：not logged on的原因及其解决办法 - 一只竹节虫 - 博客园 (cnblogs.com)](
